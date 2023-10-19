@@ -122,23 +122,13 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/icons/
-    - assets/images/json/
-    - assets/images/photo/
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
 
   fonts:
-    - family: Intel
+    - family: Gilroy
       fonts:
-        - asset: assets/Fonts/Inter-Regular.ttf
-        - asset: assets/Fonts/Inter-SemiBold.ttf
-          weight: 600
-    - family: Poppins
-      fonts:
-        - asset: assets/Fonts/Poppins-Bold.ttf
-        - asset: assets/Fonts/Poppins-Medium.ttf
-        - asset: assets/Fonts/Poppins-Regular.ttf
-          weight: 700
-    - family: Lobster
-      fonts:
-        - asset: assets/Fonts/Lobster-Regular.ttf
+        - asset: assets/fonts/gilroy_regular.ttf
+        - asset: assets/fonts/gilroy_semibold.ttf
           weight: 600
