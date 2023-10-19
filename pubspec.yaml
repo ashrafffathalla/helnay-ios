@@ -16,7 +16,7 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ">=2.19.3 <3.0.0"
@@ -125,10 +125,36 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/fonts/
+    - assets/images/get_started/
+    - assets/images/auth/
+    - assets/images/common/
+    - assets/icons/
 
   fonts:
-    - family: Gilroy
+    - family: gilroy
       fonts:
-        - asset: assets/fonts/gilroy_regular.ttf
+        - asset: assets/fonts/gilroy_reguler.ttf
+
+    - family: gilroy_bold
+      fonts:
+        - asset: assets/fonts/gilroy_bold.ttf
+
+    - family: gilroy_extra_bold
+      fonts:
+        - asset: assets/fonts/gilroy_extra_bold.otf
+
+    - family: gilroy_heavy
+      fonts:
+        - asset: assets/fonts/gilroy_heavy.ttf
+
+    - family: gilroy_light
+      fonts:
+        - asset: assets/fonts/gilroy_light.otf
+
+    - family: gilroy_medium
+      fonts:
+        - asset: assets/fonts/gilroy_medium.ttf
+
+    - family: gilroy_semibold
+      fonts:
         - asset: assets/fonts/gilroy_semibold.ttf
-          weight: 600
