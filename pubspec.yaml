@@ -93,7 +93,7 @@ dependencies:
   pull_to_refresh: any
 
     #_____________live streaming_________________#
-  agora_rtc_engine: any
+
   bubbly_camera:
     path: "CameraPlugin/camera"
 dev_dependencies:
