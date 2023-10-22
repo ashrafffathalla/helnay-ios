@@ -63,7 +63,7 @@ class LoginDashboardScreen extends StatelessWidget {
                         emailFocus: model.emailFocus,
                         emailError: model.emailError,
                         onContinueTap: model.onContinueTap,
-                        onGoogleTap: model.onGoogleTap,
+                        // onGoogleTap: model.onGoogleTap,
                         onAppleTap: model.onAppleTap,
                         onSignUpTap: model.onSignUpTap,
                         onForgotPwdTap: model.onForgotPwdTap,

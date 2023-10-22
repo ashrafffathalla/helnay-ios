@@ -15,7 +15,7 @@ class AuthCard extends StatelessWidget {
   final FocusNode emailFocus;
   final String emailError;
   final VoidCallback onContinueTap;
-  final VoidCallback onGoogleTap;
+  // final VoidCallback onGoogleTap;
   final VoidCallback onAppleTap;
   final VoidCallback onSignUpTap;
   final VoidCallback onForgotPwdTap;
@@ -26,7 +26,7 @@ class AuthCard extends StatelessWidget {
     required this.emailFocus,
     required this.emailError,
     required this.onContinueTap,
-    required this.onGoogleTap,
+    // required this.onGoogleTap,
     required this.onAppleTap,
     required this.onSignUpTap,
     required this.onForgotPwdTap,
@@ -84,17 +84,6 @@ class AuthCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 15),
-              socialButton(
-                Image.asset(
-                  AssetRes.googleLogo,
-                  height: 20,
-                  width: 20,
-                ),
-                AppRes.continueWithGoogle,
-                onGoogleTap,
-                const EdgeInsets.symmetric(horizontal: 16),
-              ),
-              const SizedBox(height: 15),
               Visibility(
                 visible: Platform.isIOS ? true : false,
                 child: socialButton(
@@ -150,7 +139,7 @@ class AuthCard extends StatelessWidget {
   }
 
   Widget socialButton(
-      Image image, String title, VoidCallback onTap, EdgeInsets padding) {
+      Image image, String? title, VoidCallback? onTap, EdgeInsets ?padding) {
     return InkWell(
       onTap: onTap,
       child: Container(
@@ -169,7 +158,7 @@ class AuthCard extends StatelessWidget {
               child: image,
             ),
             Text(
-              title,
+              title! ,
               style: const TextStyle(
                 color: ColorRes.darkGrey2,
                 fontSize: 14,
