@@ -33,10 +33,10 @@ class Screen1 extends StatelessWidget {
                 Visibility(
                   visible: ConstRes.settingData?.appdata?.isDating == 1,
                   child: const Text(
-                    AppRes.getStarted1Subtitle,
+                    "Find Your Favorite Restaurant and Foods .",
                     style: TextStyle(
                       color: ColorRes.grey,
-                      fontSize: 16,
+                      fontSize: 18,
                     ),
                   ),
                 ),

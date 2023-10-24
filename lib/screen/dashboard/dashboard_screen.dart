@@ -32,17 +32,26 @@ class DashboardScreen extends StatelessWidget {
               pageIndex: model.pageIndex,
               onBottomBarTap: model.onBottomBarTap,
             ),
+            // body: SafeArea(
+            //   bottom: false,
+            //   child: model.pageIndex == 0
+            //       ? const ExploreScreen()
+            //       : model.pageIndex == 1
+            //           ? const RandomsScreen()
+            //           : model.pageIndex == 2
+            //               ? const LiveStreamHistory()
+            //               : model.pageIndex == 3
+            //                   ? const MessageScreen()
+            //                   : const ProfileScreen(),
+            // ),
             body: SafeArea(
               bottom: false,
               child: model.pageIndex == 0
                   ? const ExploreScreen()
-                  : model.pageIndex == 1
-                      ? const RandomsScreen()
-                      : model.pageIndex == 2
-                          ? const LiveStreamHistory()
-                          : model.pageIndex == 3
-                              ? const MessageScreen()
-                              : const ProfileScreen(),
+
+                  : model.pageIndex == 3
+                  ? const MessageScreen()
+                  : const ProfileScreen(),
             ),
           ),
         );

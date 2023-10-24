@@ -34,14 +34,14 @@ class BottomBar extends StatelessWidget {
           children: ConstRes.settingData?.appdata?.isDating == 0
               ? [
                   iconBox(AssetRes.explore, AppRes.explore, 17.5, 17.5, 0),
-                  iconBox(AssetRes.joinLives, AppRes.joinLive, 17.5, 17.5, 2),
+                  // iconBox(AssetRes.joinLives, AppRes.joinLive, 17.5, 17.5, 2),
                   iconBox(AssetRes.message, AppRes.message, 16.8, 18, 3),
                   iconBox(AssetRes.profile, AppRes.profile, 18, 17, 4),
                 ]
               : [
                   iconBox(AssetRes.explore, AppRes.explore, 17.5, 17.5, 0),
-                  iconBox(AssetRes.randoms, AppRes.randoms, 18.22, 20.02, 1),
-                  iconBox(AssetRes.joinLives, AppRes.joinLive, 17.5, 17.5, 2),
+                  // iconBox(AssetRes.randoms, AppRes.randoms, 18.22, 20.02, 1),
+                  // iconBox(AssetRes.joinLives, AppRes.joinLive, 17.5, 17.5, 2),
                   iconBox(AssetRes.message, AppRes.message, 16.8, 18, 3),
                   iconBox(AssetRes.profile, AppRes.profile, 18, 17, 4),
                 ],
@@ -55,6 +55,8 @@ class BottomBar extends StatelessWidget {
     return InkWell(
       onTap: () {
         onBottomBarTap(index);
+        print(index.toString()+"HHH");
+        print(pageIndex.toString()+"HHH");
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,

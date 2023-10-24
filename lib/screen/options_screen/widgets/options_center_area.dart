@@ -14,7 +14,7 @@ class OptionsCenterArea extends StatelessWidget {
   final bool showMeOnMap;
   final bool goAnnonymous;
   final VoidCallback onApplyForVerTap;
-  final VoidCallback onLiveStreamTap;
+  // final VoidCallback onLiveStreamTap;
   final VoidCallback onNotificationTap;
   final VoidCallback onShowMeOnMapTap;
   final VoidCallback onAnnonymousTap;
@@ -25,7 +25,7 @@ class OptionsCenterArea extends StatelessWidget {
       required this.notificationEnable,
       required this.showMeOnMap,
       required this.goAnnonymous,
-      required this.onLiveStreamTap,
+      // required this.onLiveStreamTap,
       required this.onNotificationTap,
       required this.onShowMeOnMapTap,
       required this.onAnnonymousTap,
@@ -39,37 +39,37 @@ class OptionsCenterArea extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 9),
-        InkWell(
-          onTap: onLiveStreamTap,
-          child: Container(
-            height: 49,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: ColorRes.grey12),
-            child: Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 13, top: 12, bottom: 12),
-                  child: Image.asset(
-                    AssetRes.sun,
-                    height: 25,
-                    width: 25,
-                  ),
-                ),
-                const SizedBox(width: 21),
-                const Text(
-                  AppRes.livestream,
-                  style: TextStyle(
-                    color: ColorRes.blueGrey,
-                    fontSize: 15,
-                    fontFamily: FontRes.semiBold,
-                  ),
-                )
-              ],
-            ),
-          ),
-        ),
+        // InkWell(
+        //   onTap: onLiveStreamTap,
+        //   child: Container(
+        //     height: 49,
+        //     width: MediaQuery.of(context).size.width,
+        //     decoration: BoxDecoration(
+        //         borderRadius: BorderRadius.circular(10),
+        //         color: ColorRes.grey12),
+        //     child: Row(
+        //       children: [
+        //         Padding(
+        //           padding: const EdgeInsets.only(left: 13, top: 12, bottom: 12),
+        //           child: Image.asset(
+        //             AssetRes.sun,
+        //             height: 25,
+        //             width: 25,
+        //           ),
+        //         ),
+        //         const SizedBox(width: 21),
+        //         const Text(
+        //           AppRes.livestream,
+        //           style: TextStyle(
+        //             color: ColorRes.blueGrey,
+        //             fontSize: 15,
+        //             fontFamily: FontRes.semiBold,
+        //           ),
+        //         )
+        //       ],
+        //     ),
+        //   ),
+        // ),
         const SizedBox(height: 9),
         Visibility(
           visible: verification == 0 ? true : false,

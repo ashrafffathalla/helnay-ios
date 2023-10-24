@@ -45,7 +45,7 @@ class ExploreScreen extends StatelessWidget {
             ),
             const SizedBox(height: 26),
             BottomButtons(
-              onPlayBtnTap: model.onPlayButtonTap,
+              // onPlayBtnTap: model.onPlayButtonTap,
               onNextBtnTap: model.onNextButtonTap,
               onEyeTap: model.onEyeButtonTap,
             ),

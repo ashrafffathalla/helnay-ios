@@ -6,13 +6,13 @@ import '../../../utils/asset_res.dart';
 import '../../../utils/color_res.dart';
 
 class BottomButtons extends StatelessWidget {
-  final VoidCallback onPlayBtnTap;
+  // final VoidCallback ?onPlayBtnTap;
   final VoidCallback onNextBtnTap;
   final VoidCallback onEyeTap;
 
   const BottomButtons({
     Key? key,
-    required this.onPlayBtnTap,
+    // required this.onPlayBtnTap,
     required this.onNextBtnTap,
     required this.onEyeTap,
   }) : super(key: key);
@@ -22,10 +22,10 @@ class BottomButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Visibility(
-            visible:
-                ConstRes.settingData?.appdata?.isDating == 0 ? false : true,
-            child: PlayBtnClick(onPlayBtnClick: onPlayBtnTap)),
+        // Visibility(
+        //     visible:
+        //         ConstRes.settingData?.appdata?.isDating == 0 ? false : true,
+        //     child: PlayBtnClick(onPlayBtnClick: onPlayBtnTap)),
         UnicornOutlineButton(
           strokeWidth: 3,
           radius: 30,

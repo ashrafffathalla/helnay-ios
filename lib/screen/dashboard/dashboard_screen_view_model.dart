@@ -44,11 +44,11 @@ class DashboardScreenViewModel extends BaseViewModel {
   }
 
   void onBottomBarTap(int index) {
-    if (userData?.isBlock == 1 && index == 4) {
-      pageIndex = index;
-      notifyListeners();
-      return;
-    }
+    // if (userData?.isBlock == 1 && index == 4) {
+    //   pageIndex = index;
+    //   notifyListeners();
+    //   return;
+    // }
     if (userData?.isBlock == 1) {
       return SnackBarWidget().snackBarWidget(AppRes.userBlock);
     }

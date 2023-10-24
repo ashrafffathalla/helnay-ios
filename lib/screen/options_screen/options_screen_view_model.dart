@@ -72,11 +72,11 @@ class OptionalScreenViewModel extends BaseViewModel {
         snackPosition: SnackPosition.BOTTOM);
   }
 
-  void onLiveStreamTap() {
-    userData?.isBlock == 1
-        ? SnackBarWidget().snackBarWidget(AppRes.userBlock)
-        : Get.to(() => const LiveStreamDashBoard());
-  }
+  // void onLiveStreamTap() {
+  //   userData?.isBlock == 1
+  //       ? SnackBarWidget().snackBarWidget(AppRes.userBlock)
+  //       : Get.to(() => const LiveStreamDashBoard());
+  // }
 
   void onApplyForVerTap() {
     userData?.isBlock == 1

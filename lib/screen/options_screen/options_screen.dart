@@ -50,7 +50,7 @@ class OptionScreen extends StatelessWidget {
                                   notificationEnable: model.notificationEnable,
                                   goAnnonymous: model.goAnonymous,
                                   showMeOnMap: model.showMeOnMap,
-                                  onLiveStreamTap: model.onLiveStreamTab,
+                                  // onLiveStreamTap: model.onLiveStreamTab,
                                   onApplyForVerTap: model.onApplyForVerTap,
                                   onAnnonymousTap: model.onGoAnonymousTap,
                                   onNotificationTap: model.onNotificationTap,

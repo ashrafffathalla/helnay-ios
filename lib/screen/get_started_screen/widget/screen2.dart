@@ -39,14 +39,14 @@ class Screen2 extends StatelessWidget {
                 Row(
                   children: [
                     SizedBox(width: Get.width / 2.25),
-                    clipTile(AssetRes.fitness, AppRes.fitness),
+                    // clipTile(AssetRes.fitness, AppRes.fitness),
                   ],
                 ),
                 const SizedBox(height: 13),
                 Row(
                   children: [
                     SizedBox(width: Get.width / 4.8),
-                    clipTile(AssetRes.music, AppRes.music),
+                    // clipTile(AssetRes.music, AppRes.music),
                     const SizedBox(width: 7),
                     clipTile(AssetRes.fastFood, AppRes.foodies),
                   ],
@@ -59,9 +59,9 @@ class Screen2 extends StatelessWidget {
                   child: Row(
                     children: [
                       SizedBox(width: Get.width / 10),
-                      clipTile(AssetRes.movies, AppRes.movies),
+                      // clipTile(AssetRes.movies, AppRes.movies),
                       const SizedBox(width: 11),
-                      clipTile(AssetRes.walking, AppRes.walking),
+                      // clipTile(AssetRes.walking, AppRes.walking),
                       const SizedBox(width: 11),
                       clipTile(AssetRes.chef, AppRes.chef),
                     ],
@@ -71,16 +71,16 @@ class Screen2 extends StatelessWidget {
                 Row(
                   children: [
                     SizedBox(width: Get.width / 4.0),
-                    clipTile(AssetRes.microphone, AppRes.singing),
+                    // clipTile(AssetRes.microphone, AppRes.singing),
                     const SizedBox(width: 11),
-                    clipTile(AssetRes.travel, AppRes.travel),
+                    // clipTile(AssetRes.travel, AppRes.travel),
                   ],
                 ),
                 const SizedBox(height: 13),
                 Row(
                   children: [
                     SizedBox(width: Get.width / 2.5),
-                    clipTile(AssetRes.artist, AppRes.artist),
+                    // clipTile(AssetRes.artist, AppRes.artist),
                   ],
                 ),
                 SizedBox(height: Get.height / 8),
